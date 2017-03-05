@@ -1,5 +1,5 @@
 
-
+library(gstat)
 # read data 
 a <- read.csv("https://raw.githubusercontent.com/b-w-a/stats_273_geo_stats/master/replication.csv", header = T, stringsAsFactors = F)
 q <- gstat(id="z", formula=z~1, locations=~x+y, data=a) # make gstat object 
